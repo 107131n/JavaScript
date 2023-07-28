@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    <script>
+        // var i = 0;
+        // while(i<5){
+        //     document.write('js'+'<br>');
+        //     i++;
+        // }
+
+        // var i = 0;
+        // do{
+        //     document.write('js'+'<br>');
+        //     i++;
+        // }while(i<5)
+
+
+        // for(var i = 0; i < 5; i++){
+        //     document.write('js'+'<br>');
+        // }
+    </script>
+
+    <h1>Array</h1>
+    <script>
+        var arr = ["자바스크립트", "C언어", "파이썬"];
+        document.write(arr[0]+'<br>');
+        document.write(arr[1]+'<br>');
+        document.write(arr[2]+'<br>');
+        document.write(arr.length + '<br>');
+    </script>
+    <h1>ADD</h1>
+    <script>
+        arr.push('C#.NET');
+        arr.push('MySQL');
+        document.write(arr.length + '<br>');
+        document.write(arr[3]+'<br>');
+        document.write(arr[4]+'<br>');
+    </script>
+
+    <h1>전체 출력</h1>
+    <script>
+        for(var i = 0; i < arr.length; i++){
+            document.write('<li>'+arr[i]+'</li>');
+        }
+        var list = document.querySelectorAll('li');
+        for (var i = 0;i < arr.length; i++){
+            console.log(list[i]);
+            
+        }
+    </script>
+
+
+</body>
+</html>

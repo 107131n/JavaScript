@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    
+</head>
+<body>
+    <form>
+        <input type="button" id = "myid" value="버튼" onclick="func()"></input>
+        <input type="text" onchange="alert('변경')"></input> 
+    </form>
+
+    <script>
+        var element = document.getElementById("myid");
+        // element.onclick = function(){ //function 익명함수, 콜백함수
+        //     alert("1번 클릭");
+        // }        
+            element.addEventListener("click", function(){
+                alert("1번 클릭함");
+            })
+        var element = document.getElementById("myid");
+        // element.onclick = function(){ //function 익명함수, 콜백함수
+        //     alert("2번 클릭");
+        // }
+            element.addEventListener("click", function(){
+                alert("2번 클릭함");
+            })
+        </script>
+
+</body>
+</html>
+
+
