@@ -1,0 +1,38 @@
+<!-- 타이머 예제 코드를 활용하여 시:분:초가 출력되도록 코드를 작성하라. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+</head>
+<body>
+    <script>
+        var timeId;
+        var hour = 0;
+        var min = 0;
+        var sec = 0;
+        function timeStart(){
+            timeId = window.setInterval(function(){
+                sec++;
+                if (sec > 59){
+                    min++;
+                    sec = 0;
+                }
+                if (min > 59){
+                    hour++;
+                    min = 0;
+                }
+                document.getElementById("result").innerHTML = hour + ':' + min + ':' + sec;
+            },1000);
+        }
+        function timeReset(){
+            window.clearTimeout(timeId);
+        }
+    </script>
+    <button onclick="timeStart()">시작</button>
+    <button onclick="timeReset()">재설정</button>
+
+    <div id = "result"></div>
+</body>
+</html>

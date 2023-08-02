@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator</title>
+</head>
+<body>
+    <script>
+        // document.write("appCodename : " + navigator.appCodeName + "<p>");
+        // document.write("appCodename : " + navigator.appName + "<p>");
+        // document.write("appCodename : " + navigator.appVersion + "<p>");
+        // document.write("appCodename : " + navigator.platform + "<p>");
+        // document.write("appCodename : " + navigator.userAgent + "<p>");
+        
+        // for(var name in navigator){
+        //     document.write(name + " : "+ navigator[name] + "<p>")
+        // }
+
+// navigator 객체임/ object 자료형/ 
+// in 뒤에 객체 배치하고 반복문 돌리면 읽은 데이터를 변수 name에 던져 줌
+// object 자료형은 var obj = {key1 : value1, key2 : value2} 형태
+// navigator[key1]
+
+            var agent = navigator.userAgent.toLowerCase();
+            if(agent.indexOf("chrome") != -1){
+                document.write("<h1>" + "크롬 부라우저를 지원합니다." +"<h1>");
+            }
+            else{
+                document.write("<h1>" + "크롬 부라우저를 지원하지 않습니다." +"<h1>");
+            }
+
+    </script>
+</body>
+</html>

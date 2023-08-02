@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location 객체</title>
+</head>
+<body onload = "myload()">
+    <script>
+        var loc = location.protocol + '\n'
+         + location.host + '\n'
+         + location.hostname + '\n'
+         + location.href + '\n'
+         + location.pathname + '\n'
+         + location.port + '\n'
+
+        //  alert(loc);
+
+         function myload(){
+            var loc = location.href;
+            document.getElementById("result").innerHTML="현재 주소값은 " + loc + "입니다.";
+         }
+
+         function changeAddr(){
+            location.href = "https://almang.net/";
+         }
+
+        function refreshDoc(){
+            location.reload();
+        }
+        function moveDoc(){
+            location.replace('https://www.naver.com/');
+        }
+        function count(){
+            var urlCount = history.length;
+            document.write("현재까지 방문횟수는 " + urlCount)
+        }
+        function goBack(){
+            history.back();
+        }
+        function goForward(){
+            history.forward();
+        }
+    </script>
+
+    <button onclick="changeAddr()">알맹 상점</button>
+    <div id = "result"></div>
+    <button onclick="refreshDoc()">새로 고침</button>
+    <button onclick="moveDoc()">문서 이동</button><p></p>
+    <button onclick="count()">방문 횟수</button>
+    <button onclick="goBack()">뒤로</button>
+    <button onclick="goForward()">앞으로</button>
+
+</body>
+</html>

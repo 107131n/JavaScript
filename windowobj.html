@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윈도우 객체</title>
+</head>
+<body>
+    <script>
+        // var newWin;
+        // function newOpen(){
+        //     newWin = window.open('test.html','','width = 200,height = 100');
+        // }
+        // function winClose(){
+        //     newWin.close();
+        // }
+
+        var timeId;
+
+        function timeStart(){
+            alert('5초 후에,,,')
+            timeId = window.setTimeout(function(){
+                alert('꽁!');
+            }, 5000);
+        }
+        function timeStop(){
+            window.clearTimeout(timeId);
+            alert('쿠쿠');
+        }
+    </script>
+    <!-- <button onclick="newOpen()">새 윈도우 열기</button>
+    <br>
+    <button onclick="winClose()"> 윈도우 닫기</button> -->
+
+    <button onclick="timeStart()">시한 폭탄 설정</button>
+    <br>
+    <br>
+    <button onclick="timeStop()">시한 폭탄 해제</button>
+    
+</body>
+</html>
