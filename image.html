@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image 객체</title>
+</head>
+<body>
+    <h1><center>베스트 셀러</center></h1><hr>
+    <img src="alien.jpg">
+    <img src="figure.png">
+    <img src="millu.jpg"><hr>
+
+    <script>
+        document.write(document.images.length + "<br>");
+        for(var i = 0; i < document.images.length; i++){
+            document.images[i].border = "2"; 
+            document.images[i].width = "150";
+            document.images[i].height = "120";
+            }
+        
+        for(var i = 0; i < document.images.length; i++){
+            document.write(document.images[i].width + "<br>")
+            document.write(document.images[i].height + "<br>")
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select 객체</title>
+</head>
+<body>
+    <h2>가 볼만한 사이트</h2>
+    <form name="test">
+        <select name="page" onchange="loadPage()">
+            <option value="#">사이트 선택</option>
+            <option value="http://www.disney.co.kr/home/index.jsp">월트 디즈니</option>
+            <option value="https://www.everland.com/web/everland/main.html">에버랜드</option>
+            <option value="https://www.lotteworld.com/gate.html">롯데월드</option>
+        </select>
+    </form>
+    <script>
+        function loadPage(){
+            var obj = document.test.page;
+            location.href = obj.options[obj.selectedIndex].value;
+        }
+        function alertMsg(){
+            alert('보안이 취약한 사이트입니다.');
+        }
+    </script>
+</body>
+</html>

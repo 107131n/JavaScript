@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link 객체</title>
+</head>
+<body>
+    
+    <a href="https://comic.naver.com/index" target="_blank">네이버 웹툰</a><br>
+    <a href="https://news.naver.com/" target="_blank">네이버 뉴스</a><br>
+
+    <script>
+        for (var i = 0; i < document.links.length; i++){
+        document.write(document.links[i].href + "<br>"); 
+        document.write(document.links[i].pathname + "<br>"); 
+        document.write(document.links[i].target + "<br>");         
+        }
+
+    </script>
+</body>
+</html>
