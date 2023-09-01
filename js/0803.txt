@@ -1,0 +1,88 @@
+0803
+link 객체
+
+document 객체의 하위 객체
+
+link 정보는 배열 형태로 저장
+
+
+
+
+
+Image 객체
+
+<img> 태그와 같은 이미지 요소들과 연관
+
+문서 상에 삽입된 이미지들을 모두 탐색
+
+image 정보는 배열 형태로 저장
+
+
+
+ 
+
+Form 객체
+
+text 객체
+
+password 객체
+
+textarea 객체
+
+버튼(button/ submit/ reset) 객체
+
+checkbox 객체
+
+radio 객체
+
+select 객체
+
+
+
+Form 객체
+
+예로 회원 가입 페이지
+
+자바스크립트를 이용하여 각 필드의 요소들을 제어 가능
+
+document 객체의 하위에 있는 내장 객체
+
+<form> 태그를 자바스크립트로 정의
+
+
+
+
+
+Text 객체
+
+텍스트 박스를 자바스크립트  text 객체를 통해 관리
+
+
+
+
+
+Textarea 객체
+
+여러 줄을 입력 가능
+
+
+
+
+
+checkbox 객체
+
+체크 상태면 True
+
+아니면 False
+
+
+
+
+
+radio 객체
+
+
+
+
+
+select 객체
